@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import TimerButton from "../TimerButton/TimerButton";
 import "./Timer.css";
-// import TimerButton from "../TimerButton/TimerButton";
-// import PlayArrowIcon from "@material-ui/icons/PlayArrow";
-// import PauseIcon from "@material-ui/icons/Pause";
 
 class Timer extends Component {
   constructor(props: any) {

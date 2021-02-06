@@ -1,15 +1,21 @@
-var CACHE_NAME = 'my-site-cache-v1';
+console.log('Register from SW>JS');
+
+
+var CACHE_NAME = 'Timer-App';
 var urlsToCache = [
-  '/',
-  '/static/css/main.04a1161a.chunk.css',
-  '/static/js/2.cbf83fc4.chunk.js',
-  '/static/js/main.de88b346.chunk.js',
-  '/manifest.json',
-  '/logo.png'
+    '/',
+    '/static/js/bundle.js',
+    '/static/js/vendors~main.chunk.js',
+    '/static/js/main.chunk.js',
+    // '/favicon.ico',
+    '/sockjs-node',
+    '/manifest.json',
+    '/logo1.png',
 ];
 
 self.addEventListener('install', function(event) {
-  // Perform install steps
+    console.log("Install runssssssssssssss")
+    // Perform install steps
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
@@ -19,8 +25,8 @@ self.addEventListener('install', function(event) {
   );
 });
 
-
 self.addEventListener('fetch', function(event) {
+    console.log("Fetch runssssssssssssss")
     event.respondWith(
       caches.match(event.request)
         .then(function(response) {
