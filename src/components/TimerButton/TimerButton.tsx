@@ -9,9 +9,5 @@ const TimerButton = ({ buttonAction, buttonValue,name }:any) => (<div>
     </div>
   );
 
-// TimerButton.propTypes = {
-//   buttonAction: PropTypes.func.isRequired,
-//   buttonValue: PropTypes.string.isRequired,
-// };
 
 export default TimerButton;
