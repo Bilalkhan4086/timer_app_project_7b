@@ -85,7 +85,8 @@ class Timer extends Component {
             {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
           </h1>
         </div>
-        <br/><br/>
+        <br/>
+        <br/>
         <div className="timer-button-container">
           <TimerButton name="start-timer" buttonAction={this.startTimer} buttonValue='Start'/>
           <TimerButton name="stop-timer" buttonAction={this.stopTimer}  buttonValue='Stop'/>

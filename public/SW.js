@@ -1,4 +1,3 @@
-console.log('Register from SW>JS');
 
 
 var CACHE_NAME = 'Timer-App';
@@ -14,7 +13,6 @@ var urlsToCache = [
 ];
 
 self.addEventListener('install', function(event) {
-    console.log("Install runssssssssssssss")
     // Perform install steps
   event.waitUntil(
     caches.open(CACHE_NAME)
