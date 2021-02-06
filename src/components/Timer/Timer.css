@@ -1,0 +1,13 @@
+.timer-container {
+	background-color: rgb(245,245,245);
+	box-shadow: 10px 10px 10px rgb(109, 104, 104);
+	/* border: var(--timer-border); */
+	border-radius: 5px;
+	height: var(--timer-height);
+	width: var(--timer-width);
+}
+
+.timer-button-container{
+	display: flex;
+	justify-content: space-around;
+}

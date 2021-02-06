@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - "stable"
+
+cache:
+  dependencies:
+    node_modules
+
+script:
+  - npm install
+  - yarn test 
+  - yarn run build
+
+
+deploy:
+  provider: netlify
+  skip_cleanup: true
+  domain: timer_app_project_7b.netlify.app
+  project: ./build/
+
+on: 
+  branch: master

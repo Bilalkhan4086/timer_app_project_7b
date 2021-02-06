@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	/* background-image: url(./clock.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover; */
+	background: linear-gradient(133deg, rgba(209,209,227,1) 0%, rgba(210,75,205,1) 100%);
+--timer-border: 1px solid #000000;
+	--timer-height: 70%;
+  --timer-width: 70%;
+  --button-border: 3px solid #000000;
+  --button-text-size: 2em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, div, p {
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 1224px) {
+	:root {
+		--timer-height: 100%;
+		--timer-width: 100%;
+    --button-text-size: 4em;
+  }
 }
