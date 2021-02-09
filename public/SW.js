@@ -6,7 +6,7 @@ var urlsToCache = [
     '/static/js/bundle.js',
     '/static/js/vendors~main.chunk.js',
     '/static/js/main.chunk.js',
-    // '/favicon.ico',
+    '/favicon.ico',
     '/sockjs-node',
     '/manifest.json',
     '/logo1.png',
